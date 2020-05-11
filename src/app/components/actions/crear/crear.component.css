@@ -1,0 +1,19 @@
+/* Estilos del componente */
+
+#logout button {
+    width: 5%;
+    height: auto;
+    display: block;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 15px;
+    border-color: red;
+    border-radius: 100%;
+    cursor: pointer;
+    float: right;
+    background: transparent;
+}
+
+#logout button img {
+    color: red;
+}

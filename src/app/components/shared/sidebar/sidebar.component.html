@@ -1,0 +1,15 @@
+<aside id="sidebar">
+    <div id="nav-blog" class="sidebar-item" *ngIf="!admin">
+        <a [routerLink]="['/blog/crear']" class="btn btn-dark">Crear Articulo</a>
+    </div>
+    <div id="search-blog" class="sidebar-item">
+        <h3>Buscador</h3>
+        <p>Encuentra lo que buscas</p>
+        <form #searchForm="ngForm" (ngSubmit)="buscar()">
+            <input type="text" name="search" [(ngModel)]="searchString">
+            <input class="btn btn-dark" type="submit" name="submit" value="Buscar">
+        </form>
+    </div>
+</aside>
+<!-- Limpiar los float -->
+<div class="clearfix"></div>

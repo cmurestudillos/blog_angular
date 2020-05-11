@@ -1,0 +1,12 @@
+<!-- Slider -->
+<app-slider [nombre]="'Blog'" [size]="'small'"></app-slider>
+<div class="center">
+    <!-- Contenido -->
+    <section id="content">
+        <h2 class="sub-header">{{titulo}}</h2>
+        <!-- Listado de Articulos -->
+        <app-articulos [articulos]="articulos"></app-articulos>
+    </section>
+    <!-- Sidebar -->
+    <app-sidebar></app-sidebar>
+</div>

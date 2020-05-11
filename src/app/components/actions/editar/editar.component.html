@@ -1,0 +1,36 @@
+<div class="center">
+    <div id="logout">
+        <button (click)="salir()" title="Desconectar">
+      <img src="assets/images/power_off.svg" class="desconectar">
+    </button>
+    </div>
+    <!-- Contenido -->
+    <section id="content">
+        <h2 class="sub-header">{{title}}</h2>
+        <form class="middle-form" #articuloForm="ngForm" (ngSubmit)="onSubmit(articuloForm)">
+            <div class="form-group">
+                <label for="titulo">Titulo: </label>
+                <input type="text" name="titulo" #titulo="ngModel" [(ngModel)]="articulo.titulo" required>
+                <span *ngIf="!titulo.valid && titulo.touched"> El titulo no es valido. </span>
+            </div>
+            <div class="form-group">
+                <label for="contenido">Contenido: </label>
+                <textarea name="contenido" #contenido="ngModel" [(ngModel)]="articulo.contenido" required></textarea>
+                <span *ngIf="!contenido.valid && contenido.touched"> El contenido no es valido. </span>
+            </div>
+            <div class="imagen">
+                <!-- <img src="{{url + 'get-imagen/' + articulo.imagen}}" title="{{articulo.titulo}}" alt="{{articulo.titulo}}" *ngIf="articulo.imagen" /> -->
+                <!-- <img src="assets/images/noimage.png" title="{{articulo.titulo}}" alt="{{articulo.titulo}}" *ngIf="!articulo.imagen" /> -->
+            </div>
+            <div class="form-group">
+                <!-- <angular-file-uploader [config]="afuConfig" (ApiResponse)="imagenUpload($event)"></angular-file-uploader> -->
+            </div>
+            <!-- Limpiar los float -->
+            <div class="clearfix"></div>
+            <div class="left"><input type="submit" value="Guardar" class="btn btn-success" [disabled]="articuloForm.invalid" /></div>
+            <div class="right"><a [routerLink]="['/blog/articulo', articulo.id]" class="btn btn-danger"> Cancelar </a></div>
+        </form>
+    </section>
+    <!-- Limpiar los float -->
+    <div class="clearfix"></div>
+</div>

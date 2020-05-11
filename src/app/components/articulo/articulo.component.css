@@ -1,0 +1,31 @@
+/* Estilos del componente */
+
+.btn-warning {
+    float: left;
+    background: white;
+    color: gold;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.btn-warning:hover {
+    float: left;
+    background: gold;
+    color: white;
+}
+
+.btn-danger {
+    float: right;
+    background: white;
+    color: red;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.btn-danger:hover {
+    float: right;
+    background: red;
+    color: white;
+}
+
+.image-wrap {
+    box-shadow: 10px 10px 5px grey !important;
+}

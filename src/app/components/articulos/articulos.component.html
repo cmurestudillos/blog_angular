@@ -1,0 +1,15 @@
+<app-loading *ngIf="!articulos"></app-loading>
+
+<div id="articles" *ngIf="articulos">
+    <article class="article-item" *ngFor="let articulo of articulos">
+        <div class="image-wrap">
+            <img [src]="articulo.imagen" [title]="articulo.titulo" [alt]="articulo.titulo" *ngIf="articulo.imagen" />
+            <img src="assets/images/noimage.png" [title]="articulo.titulo" [alt]="articulo.titulo" *ngIf="!articulo.imagen" />
+        </div>
+        <h2>{{articulo.titulo}}</h2>
+        <span class="date">{{articulo.fecha | amLocale: 'es' | amTimeAgo:true}}</span>
+        <a [routerLink]="['/blog/articulo', articulo.id]">Leer mas ...</a>
+        <!-- Limpiar los float -->
+        <div class="clearfix"></div>
+    </article>
+</div>

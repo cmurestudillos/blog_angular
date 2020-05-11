@@ -1,0 +1,23 @@
+<!-- Slider -->
+<div class="center">
+    <!-- Contenido -->
+    <section id="content">
+        <div id="articles">
+            <article class="article-item detail" *ngIf="articulo ">
+                <div class="image-wrap">
+                    <img [src]="articulo.imagen" title="{{articulo.titulo}}" alt="{{articulo.titulo}}" *ngIf="articulo.imagen" />
+                    <img src="assets/images/noimage.png" title="{{articulo.titulo}}" alt="{{articulo.titulo}}" *ngIf="!articulo.imagen" />
+                </div>
+                <h1 class="sub-header">{{articulo.titulo}}</h1>
+                <span class="date">{{articulo.fecha | amLocale: 'es' | amTimeAgo:true}}</span>
+                <p>{{articulo.contenido}}</p>
+                <a [routerLink]="['/blog/editar', articulo.id]" class="btn btn-warning" *ngIf="!admin">Editar</a>
+                <a (click)="borrarArticulo(articulo.id)" class="btn btn-danger" *ngIf="!admin">Borrar</a>
+                <!-- Limpiar los float -->
+                <div class="clearfix"></div>
+            </article>
+        </div>
+    </section>
+    <!-- Sidebar -->
+    <app-sidebar></app-sidebar>
+</div>

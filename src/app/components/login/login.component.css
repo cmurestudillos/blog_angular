@@ -1,0 +1,58 @@
+/* Estilos del componente */
+
+.btn-form {
+    background: #444;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+    margin: 0px auto;
+}
+
+.btn-form:hover {
+    background: white;
+    color: #444;
+    border: 1px solid #444;
+}
+
+.middle-form {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.middle-form label {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-bottom: 5px;
+    transition: 300ms all;
+}
+
+input[type="text"]:focus,
+textarea {
+    box-shadow: 0px 0px 5px #ccc inset;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+.radio-button {
+    margin-top: 15px;
+    float: left;
+    margin-bottom: 15px;
+}
