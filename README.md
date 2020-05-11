@@ -1,4 +1,4 @@
-# BlogAangular
+# BlogAngular
 
 Ejemplo de Blog sencillo realizado con Angular y la API Rest de Firebase.
 
