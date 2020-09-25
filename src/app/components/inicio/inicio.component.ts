@@ -4,7 +4,7 @@ import { Articulo } from '../../models/articulo';
 // Servicio
 import { ArticulosService } from '../../services/articulos.service';
 // Url de la API
-import { Global } from '../../services/global';
+import { Global } from '../../api/global';
 
 @Component({
   selector: 'app-inicio',

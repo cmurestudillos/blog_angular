@@ -1,0 +1,12 @@
+# dependences
+node_modules
+
+# testing
+coverage
+
+# procution
+dist
+
+# editor directories and files
+.vscode
+

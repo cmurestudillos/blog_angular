@@ -12,4 +12,4 @@ Ejecutar en terminal el comando `ng serve` e introducir en el navegador `http://
 ## Ayuda
 Para mas informacion, ejecutar el comando `ng help` en el terminal o ir a [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-Este proyecto se ha generado con [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+Este proyecto se ha generado con [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.

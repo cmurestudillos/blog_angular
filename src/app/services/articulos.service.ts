@@ -6,7 +6,7 @@ import { Articulo } from '../models/articulo';
 // Operadores
 import { map, delay } from 'rxjs/operators';
 // Url de API
-import { Global } from "./global";
+import { Global } from "../api/global";
 
 @Injectable({
   providedIn: 'root'
