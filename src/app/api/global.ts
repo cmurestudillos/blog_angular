@@ -1,4 +1,6 @@
+import {endpoint} from '../conf/firebase.config';
+
 export var Global = {
-  url: 'xxxxx'
+  url: endpoint.APP_DATABASE_URL
 };
 

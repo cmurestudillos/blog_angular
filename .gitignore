@@ -4,9 +4,13 @@ node_modules
 # testing
 coverage
 
-# procution
+# production
 dist
 
 # editor directories and files
 .vscode
+
+# Config files
+key.js
+firebase.config.ts
 
